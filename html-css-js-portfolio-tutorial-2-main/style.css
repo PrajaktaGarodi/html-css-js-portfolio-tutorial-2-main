@@ -21,6 +21,7 @@ body {
   background-color: var(--black);
 }
 
+
 html {
   scroll-behavior: smooth;
 }
@@ -41,15 +42,14 @@ a,
 nav,
 .nav-links {
   display: flex;
-  
 }
 
 nav {
   justify-content: space-around;
   align-items: center;
   height: 17vh;
-  color: var(--text-color);
- 
+  background-color: var(--black);
+  color: var(--light-purple)
 }
 
 .nav-links {
@@ -59,16 +59,16 @@ nav {
 }
 
 a {
-  color: var(--text-color);
+  color: var(--light-purple);
   text-decoration: none;
-  text-decoration-color: white;
+  /* text-decoration-color: white; */
 }
 
 a:hover {
-  color: var(--text-color);
+  color: var(--light-purple) ;
   text-decoration: underline;
   text-underline-offset: 1rem;
-  text-decoration-color: rgb(181, 181, 181);
+  text-decoration-color: #cd84a8;
 }
 
 .logo {
@@ -122,7 +122,7 @@ a:hover {
   padding: 10px;
   text-align: center;
   font-size: 1.5rem;
-  color: var(--text-color);
+  color: black;
   text-decoration: none;
   transition: all 0.3 ease-in-out;
 }
@@ -164,6 +164,7 @@ a:hover {
 section {
   padding-top: 4vh;
   height: 96vh;
+  background-color: var(--black);
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
@@ -189,28 +190,45 @@ section {
   margin: auto 0;
 }
 
+.section__pic-container img{
+  border-radius: 50%;
+}
+
+
+.font-icon{
+  font-size: 30px;
+  color: var(--light-purple);
+}
 .section__text {
   align-self: center;
   text-align: center;
 }
-
+.title{
+  color: #cd84a8;
+}
 .section__text p {
   font-weight: 600;
 }
 
 .section__text__p1 {
   text-align: center;
+  color: white;
+  margin-bottom: 10px;
+  font-size: 40px;
 }
 
 .section__text__p2 {
-  font-size: 1.75rem;
+  margin-bottom: 6px;
+  font-size: 35px;
   margin-bottom: 1rem;
+  color: var(--text-color) ;
 }
 
 .title {
-  font-size: 3rem;
+  font-size: 60px;
+  margin-bottom: 8px;
+
   text-align: center;
-  margin-top: 5px;
 }
 
 #socials-container {
@@ -255,16 +273,20 @@ section {
 
 .btn-color-1,
 .btn-color-2:hover {
-  background: rgb(53, 53, 53);
-  color: var(--text-color);
+  background: var(--light-purple);
+  color: white;
 }
+.btn-color-1{
+  background-color: var(--dark-purple);
 
+}
 .btn-color-1:hover {
-  background: rgb(0, 0, 0);
+  background: var(--purple);
 }
 
-.btn-color-2 {
-  background: none;
+.btn-color-2{
+  background-color: var(--purple);
+  color: white;
 }
 
 .btn-color-2:hover {
@@ -290,12 +312,12 @@ section {
 .about-details-container {
   justify-content: center;
   flex-direction: column;
-  
 }
 
 .about-containers,
 .about-details-container {
   display: flex;
+  
 }
 
 .about-pic {
@@ -311,13 +333,16 @@ section {
 .details-container {
   padding: 1.5rem;
   flex: 1;
-  background: white;
+  background: var(--black);
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
+  border-color: var(--light-purple);
   text-align: center;
+  color: var(--text-color);
 }
-
+.details-container p{
+  color: white;
+}
 .section-container {
   gap: 4rem;
   height: 80%;
@@ -329,6 +354,10 @@ section {
   margin: auto 0;
 }
 
+.text-container p{
+  color: white;
+}
+
 /* EXPERIENCE SECTION */
 
 #experience {
@@ -336,7 +365,7 @@ section {
 }
 
 .experience-sub-title {
-  color: var(--text-color);
+  color: white;
   font-weight: 600;
   font-size: 1.75rem;
   margin-bottom: 2rem;
@@ -368,6 +397,9 @@ article .icon {
   cursor: default;
 }
 
+article div h3{
+  color: var(--light-purple)
+}
 /* PROJECTS SECTION */
 
 #projects {
@@ -375,8 +407,8 @@ article .icon {
 }
 
 .color-container {
-  border-color: rgb(163, 163, 163);
-  background: rgb(250, 250, 250);
+  border-color: var(--light-purple);
+  background: var(--black);
 }
 
 .project-img {
@@ -391,7 +423,7 @@ article .icon {
 }
 
 .project-btn {
-  color: var(--text-color);
+  color: white;
   border-color: rgb(163, 163, 163);
 }
 
